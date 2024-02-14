@@ -8,8 +8,12 @@ class Course
     @students = []
   end
 
-  def full
-
+  def full?
+    if @students.count == @capacity
+      true
+    else
+      false
+    end
   end
 
   def enroll(student)
