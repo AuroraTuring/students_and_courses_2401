@@ -29,6 +29,9 @@ class Gradebook
       end
     end
     student_list
+    # all_students = list_all_students.values.flatten
+    # all_students.select do |student|
+    #   student.grade < threshold
+    # end
   end
-
 end
