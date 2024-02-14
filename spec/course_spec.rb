@@ -17,12 +17,12 @@ RSpec.describe Course do
   end
 
   it "checks if a course is full" do
-    expect(@course.full).to be false
+    expect(@course.full?).to be false
 
     @course.enroll(@student1)
     @course.enroll(@student2)
 
-    expect(@course.students).to eq(@student1, @student2)
-    expect(@course.full).to be true
+    expect(@course.students).to eq([@student1, @student2])
+    expect(@course.full?).to be true
   end
 end
