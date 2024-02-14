@@ -14,6 +14,4 @@ class Student
   def grade
     scores.sum(0.0) / scores.size
   end
-
-
 end
