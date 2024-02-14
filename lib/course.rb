@@ -1,9 +1,8 @@
 class Course
   attr_reader :name, :age, :capacity, :students
 
-  def initialize(name, age)
+  def initialize(name, capacity)
     @name = name
-    @age = age
     @capacity = 2
     @students = []
   end
