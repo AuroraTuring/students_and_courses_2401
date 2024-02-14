@@ -13,5 +13,8 @@ class Student
 
   def grade
     scores.sum(0.0) / scores.size
+    # score1 = 89
+    # score2 = 78
+    # average = (score1 + score2)/2.0
   end
 end
