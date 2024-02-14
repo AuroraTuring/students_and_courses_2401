@@ -46,8 +46,8 @@ end
       @gradebook.add_course(@trig)
 
       expected = {
-      calc => [@student1, @student3]
-      trig => [@student2, @student4, @student5]
+      @calc => [@student1, @student3],
+      @trig => [@student2, @student4, @student5]
     }
 
       expect(@gradebook.list_all_students).to eq(expected)
