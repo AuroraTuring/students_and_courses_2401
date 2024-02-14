@@ -9,10 +9,10 @@ RSpec.describe Gradebook do
     @calc = Course.new("Calculus", 2)
     @trig = Course.new("Trigonometry", 3)
     @student1 = Student.new({name: "HERE", age: 0})
-    @student1 = Student.new({name: "HERE", age: 0})
-    @student1 = Student.new({name: "HERE", age: 0})
-    @student1 = Student.new({name: "HERE", age: 0})
-    @student1 = Student.new({name: "HERE", age: 0})
+    @student2 = Student.new({name: "HERE", age: 0})
+    @student3 = Student.new({name: "HERE", age: 0})
+    @student4 = Student.new({name: "HERE", age: 0})
+    @student5 = Student.new({name: "HERE", age: 0})
   end
 
   it "exists with attributes" do
@@ -66,12 +66,13 @@ end
       @gradebook.add_course(@trig)
 
       @student1.log_score(90)
-      @student2.log_score(80)
       @student3.log_score(70)
+      @student2.log_score(80)
       @student4.log_score(60)
+      @student5.log_score(50)
 
-      expect(@gradebook.students_below(65)).to eq([@student4])
-      expect(@gradebook.students_below(85)).to eq([@student2, @student3, @student4])
+      expect(@gradebook.students_below(65)).to eq([@student4, @student5])
+      expect(@gradebook.students_below(85)).to eq([@student3, @student2, @student4, @student5])
     end
   end
 end
