@@ -11,7 +11,7 @@ class Gradebook
   end
 
   def list_all_students
-
+    @students
   end
 
   # def students_below(threshold)
