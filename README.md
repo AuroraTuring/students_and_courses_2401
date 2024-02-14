@@ -9,7 +9,7 @@
 * Submit a pull request from your repository to the turingschool-examples repository
   * Make sure to put your name in your PR!
 
-## Iteration 1
+<!-- ## Iteration 1
 
 Use TDD to create a `Student` class that responds to the following interaction pattern:
 
@@ -38,9 +38,9 @@ pry(main)> student.scores
 
 pry(main)> student.grade # Average of all the scores
 # => 83.5
-```
+``` -->
 
-## Iteration 2
+<!-- ## Iteration 2
 
 Use TDD to create a `Course` class that responds to the following interaction pattern:
 
@@ -81,7 +81,7 @@ pry(main)> course.students
 
 pry(main)> course.full?
 # => true
-```
+``` -->
 
 ## Iteration 3
 
